@@ -1,10 +1,11 @@
-import React, { Component } from "react";
+/* eslint-disable react/prefer-stateless-function */
+import React, { Component } from 'react';
 
 class Gif extends Component {
   render() {
-    const src = 'https://media1.giphy.com/media/rVzvUgOpJlQkS06ZMO/giphy.gif';
+    const src = `https://media1.giphy.com/media/${this.props.id}/200.gif`;
     return (
-      <img src={src} alt="basketball gif" className="gif"/>
+      <img src={src} alt="" className="gif" />
     );
   }
 }

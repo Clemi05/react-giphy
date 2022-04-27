@@ -1,7 +1,9 @@
 {
   "extends": "airbnb",
   "rules": {
+    "no-alert": "off",
     "no-console": "off",
+    "no-debugger": "off",
     "comma-dangle": "off",
     "quotes": "off",
     "react/prop-types": 0,
