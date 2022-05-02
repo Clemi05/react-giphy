@@ -9,6 +9,14 @@ class SearchBar extends Component {
     };
   }
 
+  componentWillMount() {
+    console.log("SEARCH_BAR WILL MOUNT");
+  }
+
+  componentDidMount() {
+    console.log("SEARCH_BAR DID MOUNT");
+  }
+
   handleUpdated = (event) => {
     // Change the state of term
     const { searchFunction } = this.props;
@@ -19,6 +27,7 @@ class SearchBar extends Component {
   }
 
   render() {
+    console.log("SEARCH_BAR RENDER");
     const { term } = this.state;
     return (
       <input
